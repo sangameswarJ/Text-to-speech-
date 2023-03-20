@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>JS - Text to Speech</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <h2 id="page-title">Text-to-Speech by Sangameswar-J</h2>
+    <hr style="width:100px;margin:auto">
+    <div id="ttp-wrapper">
+      <textarea type="text" id="textField" rows="8" placeholder="Enter the text you want to convert here...">Hey im Sangameswar from thrissur currently studying in VIT doing Integrated Mtech in software engineering as part of my project this is my text to speech test</textarea>
+      <div class="fields">
+        <button id="speakBtn" class="btn"><span class="material-symbols-outlined">play_arrow</span> Speak</button>
+        <button id="pauseButton" class="btn"><span class="material-symbols-outlined">pause</span> Pause</button>
+        <button id="stopButton" class="btn"><span class="material-symbols-outlined">stop</span> Stop</button>
+      </div>
+      <div class="fields">
+        <div>
+          <label for="">Voice</label>
+          <select name="narrator" id="narrator">
+          </select>
+        </div>
+        <div>
+          <label for="">Speed</label>
+          <select name="narrationSpeed" id="narrationSpeed">
+            <option value=".75">x.75</option>
+            <option value="1" selected>x1</option>
+            <option value="1.25">x1.25</option>
+            <option value="1.50">x1.50</option>
+            <option value="1.75">x1.75</option>
+            <option value="2">x2</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap");
+
+* {
+  font-family:'IBM Plex Mono', monospace;
+}
+body {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: auto;
+  background-color: #282A3A;
+}
+
+#wrapper {
+  margin: auto;
+  width: 100%;
+}
+/* Page Title */
+#page-title{
+  text-align: center;
+  color: #fff
+}
+
+/* Text-to-Speech Wrapper */
+#ttp-wrapper{
+  width: 700px;
+  margin: auto;
+  margin-top: 2em;
+  padding: 2em 1em;
+  background-color: #fff;
+  border:1px solid #dbdbdb;
+  box-shadow:1px 1px 50px solid #dbdbdbad;
+}
+@media (max-width:700px){
+  #ttp-wrapper{
+    width: 98%;
+  }
+}
+/* TextField */
+#textField{
+  width: calc(100% - 2em);
+  resize: none;
+  padding: 1em;
+}
+/* Buttons and Select boxes container */
+.fields{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em 0;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  background: #2c2d34;
+  color: #fff;
+  border: 1px solid #414246;
+  box-shadow: 0px 0px 3px #414246;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:active{
+  background: #33343b;
+  border-color: #4c4d50;
+  box-shadow: 0px 0px 5px #414246;
+}
