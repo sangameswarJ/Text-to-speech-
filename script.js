@@ -54,7 +54,7 @@ window.onload = function(){
 
 /** Play Text-to-Speech */
 function speakInputText() {
-  speech.text = textField.value == "" ? textField.value : "Enter the text you want to convert here";
+  speech.text = textField.value != "" ? textField.value : "Enter the text you want to convert here";
   if(speechSynthesis.speaking)
     speechSynthesis.cancel();
   speechSynthesis.speak(speech);
